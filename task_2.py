@@ -32,7 +32,7 @@ def host_range_ping():
     [host_list.append(str(ip_address(start_ip)+x)) for x in range(int(end_ip))]
     return host_ping(host_list)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     host_range_ping()
 
 

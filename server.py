@@ -10,12 +10,12 @@ from errors import IncorrectDataRecivedError
 from common.variables import *
 from common.utils import *
 from decos import log
-from task2 import Port
+from descrptrs import Port
 from metaclasses import ServerMaker
+
 
 # Инициализация логирования сервера.
 logger = logging.getLogger('server')
-
 
 # Парсер аргументов коммандной строки.
 @log
@@ -148,7 +148,6 @@ class Server(metaclass=ServerMaker):
             response[ERROR] = 'Запрос некорректен.'
             send_message(client, response)
             return
-
 
 def main():
     # Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.

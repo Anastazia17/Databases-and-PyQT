@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Added file variables.py in directory common">
-      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
+    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Edit files in main directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descryptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/descryptors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_base.db3" beforeDir="false" afterPath="$PROJECT_DIR$/server_base.db3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_database.py" afterDir="false" />
@@ -141,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633074638448</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Edit files in main directory">
+      <created>1633075133897</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633075133897</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Edit files in main directory">
+      <created>1633075144052</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633075144052</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit files in directory" />
     <MESSAGE value="Added file variables.py in directory common" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added file variables.py in directory common" />
+    <MESSAGE value="Edit files in main directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit files in main directory" />
   </component>
 </project>

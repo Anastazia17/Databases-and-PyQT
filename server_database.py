@@ -6,16 +6,12 @@ import datetime
 
 # Класс - серверная база данных:
 class ServerStorage:
-    # Класс - отображение таблицы всех пользователей
-    # Экземпляр этого класса = запись в таблице AllUsers
     class AllUsers:
         def __init__(self, username):
             self.name = username
             self.last_login = datetime.datetime.now()
             self.id = None
 
-    # Класс - отображение таблицы активных пользователей:
-    # Экземпляр этого класса = запись в таблице ActiveUsers
     class ActiveUsers:
         def __init__(self, user_id, ip_address, port, login_time):
             self.user = user_id
@@ -24,8 +20,6 @@ class ServerStorage:
             self.login_time = login_time
             self.id = None
 
-    # Класс - отображение таблицы истории входов
-    # Экземпляр этого класса = запись в таблице LoginHistory
     class LoginHistory:
         def __init__(self, name, date, ip, port):
             self.id = None
@@ -36,10 +30,6 @@ class ServerStorage:
 
     def __init__(self):
         # Создаём движок базы данных
-        # SERVER_DATABASE - sqlite:///server_base.db3
-        # echo=False - отключаем ведение лога (вывод sql-запросов)
-        # pool_recycle - По умолчанию соединение с БД через 8 часов простоя обрывается.
-        # Чтобы это не случилось нужно добавить опцию pool_recycle = 7200 (переуст-ка соед-я через 2 часа)
         self.database_engine = create_engine(SERVER_DATABASE, echo=False, pool_recycle=7200)
 
         # Создаём объект MetaData
@@ -83,7 +73,6 @@ class ServerStorage:
         Session = sessionmaker(bind=self.database_engine)
         self.session = Session()
 
-        # Если в таблице активных пользователей есть записи, то их необходимо удалить
         # Когда устанавливаем соединение, очищаем таблицу активных пользователей
         self.session.query(self.ActiveUsers).delete()
         self.session.commit()
@@ -93,26 +82,22 @@ class ServerStorage:
         print(username, ip_address, port)
         # Запрос в таблицу пользователей на наличие там пользователя с таким именем
         rez = self.session.query(self.AllUsers).filter_by(name=username)
-        #print(type(rez))
         # Если имя пользователя уже присутствует в таблице, обновляем время последнего входа
         if rez.count():
             user = rez.first()
             user.last_login = datetime.datetime.now()
         # Если нет, то создаздаём нового пользователя
         else:
-            # Создаем экземпляр класса self.AllUsers, через который передаем данные в таблицу
             user = self.AllUsers(username)
             self.session.add(user)
             # Комит здесь нужен, чтобы присвоился ID
             self.session.commit()
 
-        # Теперь можно создать запись в таблицу активных пользователей о факте входа.
-        # Создаем экземпляр класса self.ActiveUsers, через который передаем данные в таблицу
+        # Теперь можно создаем запись в таблицу активных пользователей о факте входа.
         new_active_user = self.ActiveUsers(user.id, ip_address, port, datetime.datetime.now())
         self.session.add(new_active_user)
 
-        # и сохранить в историю входов
-        # Создаем экземпляр класса self.LoginHistory, через который передаем данные в таблицу
+        # Сохраняем в историю входов
         history = self.LoginHistory(user.id, datetime.datetime.now(), ip_address, port)
         self.session.add(history)
 
@@ -122,11 +107,9 @@ class ServerStorage:
     # Функция фиксирующая отключение пользователя
     def user_logout(self, username):
         # Запрашиваем пользователя, что покидает нас
-        # получаем запись из таблицы AllUsers
         user = self.session.query(self.AllUsers).filter_by(name=username).first()
 
         # Удаляем его из таблицы активных пользователей.
-        # Удаляем запись из таблицы ActiveUsers
         self.session.query(self.ActiveUsers).filter_by(user=user.id).delete()
 
         # Применяем изменения
@@ -153,7 +136,7 @@ class ServerStorage:
         # Возвращаем список кортежей
         return query.all()
 
-    # Функция возвращающая историю входов по пользователю или всем пользователям
+    # Функция, возвращающая историю входов по пользователю или всем пользователям
     def login_history(self, username=None):
         # Запрашиваем историю входа
         query = self.session.query(self.AllUsers.name,

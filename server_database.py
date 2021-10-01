@@ -183,3 +183,16 @@ if __name__ == '__main__':
     test_db.login_history('client_1')
     # выводим список известных пользователей
     print(test_db.users_list())
+
+
+"""
+Результат выполнения:
+
+client_1 192.168.1.4 8888
+client_2 192.168.1.5 7777
+[('client_1', '192.168.1.4', 8888, datetime.datetime(2021, 10, 1, 10, 50, 50, 65417)), ('client_2', '192.168.1.5', 7777, datetime.datetime(2021, 10, 1, 10, 50, 50, 103188))]
+[('client_2', '192.168.1.5', 7777, datetime.datetime(2021, 10, 1, 10, 50, 50, 103188))]
+[('client_1', datetime.datetime(2021, 10, 1, 10, 50, 50, 65417)), ('client_2', datetime.datetime(2021, 10, 1, 10, 50, 50, 103188)), ('fd', datetime.datetime(2019, 7, 26, 13, 11, 0, 936082)), ('ро', datetime.datetime(2019, 7, 26, 13, 11, 51, 208331)), ('хай', datetime.datetime(2019, 7, 26, 13, 14, 3, 567183)), ('df', datetime.datetime(2019, 7, 26, 13, 28, 0, 139562)), ('g', datetime.datetime(2019, 7, 26, 13, 37, 24, 92277)), ('kj', datetime.datetime(2019, 7, 26, 13, 38, 59, 978068))]
+
+Process finished with exit code 0
+"""

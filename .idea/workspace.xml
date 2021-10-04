@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Edit files in main directory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descryptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/descryptors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_base.db3" beforeDir="false" afterPath="$PROJECT_DIR$/server_base.db3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_database.py" afterDir="false" />
-    </list>
+    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Done task1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633075144052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Done task1">
+      <created>1633085675049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633085675049</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +176,7 @@
     <MESSAGE value="Edit files in directory" />
     <MESSAGE value="Added file variables.py in directory common" />
     <MESSAGE value="Edit files in main directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit files in main directory" />
+    <MESSAGE value="Done task1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done task1" />
   </component>
 </project>

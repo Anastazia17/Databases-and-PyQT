@@ -151,3 +151,12 @@ if __name__ == '__main__':
     print(sorted(test_db.get_history('test2') , key=lambda item: item[3]))
     #test_db.del_contact('test4')
     #print(test_db.get_contacts())
+
+
+"""
+Результат выполнения кода:
+
+[('test2', 'out', 'Привет', datetime.datetime(2019, 7, 30, 23, 38, 59, 989649)), ('test2', 'in', 'Как дела?', datetime.datetime(2019, 7, 30, 23, 40, 31, 628676))]
+
+Process finished with exit code 0
+"""

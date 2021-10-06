@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Change name of Project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/main_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/start_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/start_dialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-    </list>
+    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +21,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.PyQT">
+  <component name="RunManager" selected="Python.database">
     <configuration name="PyQT" type="PythonConfigurationType" factoryName="Python" activateToolWindowBeforeRun="false">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,6 +85,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Databases-and-PyQT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="descryptors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Databases-and-PyQT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,27 +119,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/descryptors.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Databases-and-PyQT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.database" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server_database" />
         <item itemvalue="Python.client_database" />
         <item itemvalue="Python.descryptors" />
-        <item itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633552012094</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging">
+      <created>1633552915839</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633552915839</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +295,7 @@
     <MESSAGE value="Done task1" />
     <MESSAGE value="Add files to Git" />
     <MESSAGE value="Change name of Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change name of Project" />
+    <MESSAGE value="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
   </component>
 </project>

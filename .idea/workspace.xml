@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
+    <list default="true" id="a4ea8c62-1499-4275-ae98-d3affbf8bb40" name="Changes" comment="Install package js.json" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633552915839</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Install package js.json">
+      <created>1633553260740</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1633553260740</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +303,7 @@
     <MESSAGE value="Add files to Git" />
     <MESSAGE value="Change name of Project" />
     <MESSAGE value="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install packages QEventlog, logger, loggerclient, loggerTest, logging-config, logging-command, logging-actions, logging" />
+    <MESSAGE value="Install package js.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install package js.json" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import logging.handlers
 import os
 from common.variables import LOGGING_LEVEL
 
+
 # создаём формировщик логов (formatter):
 server_formatter = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
 
@@ -25,7 +26,8 @@ logger.addHandler(steam)
 logger.addHandler(log_file)
 logger.setLevel(LOGGING_LEVEL)
 
-# отладка
+
+# Отладка:
 if __name__ == '__main__':
     logger.critical('Test critical event')
     logger.error('Test error ivent')

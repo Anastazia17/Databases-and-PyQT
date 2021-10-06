@@ -135,7 +135,7 @@ class ClientDatabase:
                 for history_row in query.all()]
 
 
-# отладка
+# Отладка:
 if __name__ == '__main__':
     test_db = ClientDatabase('test1')
     #for i in ['test3', 'test4', 'test5']:

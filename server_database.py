@@ -258,7 +258,7 @@ class ServerStorage:
         return query.all()
 
 
-# Отладка
+# Отладка:
 if __name__ == '__main__':
     test_db = ServerStorage()
     test_db.user_login('1111', '192.168.1.113', 8080)

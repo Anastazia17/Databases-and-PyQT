@@ -2,6 +2,7 @@ import subprocess
 
 process = []
 
+
 while True:
     action = input('Выберите действие: q - выход , s - запустить сервер, k - запустить клиенты x - закрыть все окна:')
     if action == 'q':
@@ -17,3 +18,10 @@ while True:
     elif action == 'x':
         while process:
             process.pop().kill()
+
+
+"""
+Результат выполнения кода:
+
+Выберите действие: q - выход , s - запустить сервер, k - запустить клиенты x - закрыть все окна:
+"""

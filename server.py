@@ -20,6 +20,7 @@ from PyQt5.QtCore import QTimer
 from server_gui import MainWindow, gui_create_model, HistoryWindow, create_stat_model, ConfigWindow
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
 
+
 # Инициализация логирования сервера.
 logger = logging.getLogger('server')
 

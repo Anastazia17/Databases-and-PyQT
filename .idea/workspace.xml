@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6e96a90-aae5-40c2-b817-f6130064aba6" name="Changes" comment="Install package autopep8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_database.db3" beforeDir="false" afterPath="$PROJECT_DIR$/server_database.db3" afterDir="false" />
-    </list>
+    <list default="true" id="b6e96a90-aae5-40c2-b817-f6130064aba6" name="Changes" comment="Clean all .py files from Project with Autopep8 and Reformat Code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634145680518</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Clean all .py files from Project with Autopep8 and Reformat Code">
+      <created>1634147781968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634147781968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added files for project" />
     <MESSAGE value="Install package autopep8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install package autopep8" />
+    <MESSAGE value="Clean all .py files from Project with Autopep8 and Reformat Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean all .py files from Project with Autopep8 and Reformat Code" />
   </component>
 </project>

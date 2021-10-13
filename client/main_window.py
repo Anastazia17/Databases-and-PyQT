@@ -323,10 +323,10 @@ class ClientMainWindow(QMainWindow):
                 # Если есть, спрашиваем и желании открыть с ним чат и открываем
                 # при желании
                 if self.messages.question(
-                    self,
-                    'Новое сообщение',
-                    f'Получено новое сообщение от {sender}, открыть чат с ним?',
-                    QMessageBox.Yes,
+                        self,
+                        'Новое сообщение',
+                        f'Получено новое сообщение от {sender}, открыть чат с ним?',
+                        QMessageBox.Yes,
                         QMessageBox.No) == QMessageBox.Yes:
                     self.current_chat = sender
                     self.set_active_user()
@@ -334,10 +334,10 @@ class ClientMainWindow(QMainWindow):
                 print('NO')
                 # Раз нету,спрашиваем хотим ли добавить юзера в контакты.
                 if self.messages.question(
-                    self,
-                    'Новое сообщение',
-                    f'Получено новое сообщение от {sender}.\n Данного пользователя нет в вашем контакт-листе.\n Добавить в контакты и открыть чат с ним?',
-                    QMessageBox.Yes,
+                        self,
+                        'Новое сообщение',
+                        f'Получено новое сообщение от {sender}.\n Данного пользователя нет в вашем контакт-листе.\n Добавить в контакты и открыть чат с ним?',
+                        QMessageBox.Yes,
                         QMessageBox.No) == QMessageBox.Yes:
                     self.add_contact(sender)
                     self.current_chat = sender

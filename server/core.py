@@ -86,7 +86,8 @@ class MessageProcessor(threading.Thread):
                         self.process_client_message(
                             get_message(client_with_message), client_with_message)
                     except (OSError, json.JSONDecodeError, TypeError) as err:
-                        logger.debug(f'Getting data from client exception.', exc_info=err)
+                        logger.debug(
+                            f'Getting data from client exception.', exc_info=err)
                         self.remove_client(client_with_message)
 
     def remove_client(self, client):
@@ -274,7 +275,11 @@ class MessageProcessor(threading.Thread):
             message_auth[DATA] = random_str.decode('ascii')
             # Создаём хэш пароля и связки с рандомной строкой, сохраняем
             # серверную версию ключа
-            hash = hmac.new(self.database.get_hash(message[USER][ACCOUNT_NAME]), random_str, 'MD5')
+            hash = hmac.new(
+                self.database.get_hash(
+                    message[USER][ACCOUNT_NAME]),
+                random_str,
+                'MD5')
             digest = hash.digest()
             logger.debug(f'Auth message = {message_auth}')
             try:

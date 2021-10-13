@@ -84,8 +84,8 @@ class ServerStorage:
                 'id', Integer, primary_key=True), Column(
                 'user', ForeignKey('Users.id'), unique=True), Column(
                 'ip_address', String), Column(
-                    'port', Integer), Column(
-                        'login_time', DateTime))
+                'port', Integer), Column(
+                'login_time', DateTime))
 
         # Создаём таблицу истории входов
         user_login_history = Table('Login_history', self.metadata,
@@ -253,8 +253,8 @@ class ServerStorage:
         # пользователь мы доверяем)
         if not contact or self.session.query(
                 self.UsersContacts).filter_by(
-                user=user.id,
-                contact=contact.id).count():
+            user=user.id,
+            contact=contact.id).count():
             return
 
         # Создаём объект и заносим его в базу

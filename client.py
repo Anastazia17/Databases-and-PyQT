@@ -64,7 +64,8 @@ if __name__ == '__main__':
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
             client_passwd = start_dialog.client_passwd.text()
-            logger.debug(f'Using USERNAME = {client_name}, PASSWD = {client_passwd}.')
+            logger.debug(
+                f'Using USERNAME = {client_name}, PASSWD = {client_passwd}.')
         else:
             exit(0)
 
@@ -83,7 +84,7 @@ if __name__ == '__main__':
         with open(key_file, 'rb') as key:
             keys = RSA.import_key(key.read())
 
-    #!!!keys.publickey().export_key()
+    # !!!keys.publickey().export_key()
     logger.debug("Keys sucsessfully loaded.")
     # Создаём объект базы данных
     database = ClientDatabase(client_name)

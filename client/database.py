@@ -5,17 +5,18 @@ from sqlalchemy.orm import mapper, sessionmaker
 import os
 
 
-
 class ClientDatabase:
     '''
     Класс - оболочка для работы с базой данных клиента.
     Использует SQLite базу данных, реализован с помощью
     SQLAlchemy ORM и используется классический подход.
     '''
+
     class KnownUsers:
         '''
         Класс - отображение для таблицы всех пользователей.
         '''
+
         def __init__(self, user):
             self.id = None
             self.username = user
@@ -24,6 +25,7 @@ class ClientDatabase:
         '''
         Класс - отображение для таблицы статистики переданных сообщений.
         '''
+
         def __init__(self, contact, direction, message):
             self.id = None
             self.contact = contact
@@ -35,6 +37,7 @@ class ClientDatabase:
         '''
         Класс - отображение для таблицы контактов.
         '''
+
         def __init__(self, contact):
             self.id = None
             self.name = contact
@@ -100,7 +103,7 @@ class ClientDatabase:
         '''Метод добавляющий контакт в базу данных.'''
         if not self.session.query(
                 self.Contacts).filter_by(
-                name=contact).count():
+            name=contact).count():
             contact_row = self.Contacts(contact)
             self.session.add(contact_row)
             self.session.commit()
@@ -141,7 +144,7 @@ class ClientDatabase:
         '''Метод проверяющий существует ли пользователь.'''
         if self.session.query(
                 self.KnownUsers).filter_by(
-                username=user).count():
+            username=user).count():
             return True
         else:
             return False

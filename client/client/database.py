@@ -46,7 +46,7 @@ class ClientDatabase:
         # Поскольку клиент мультипоточный необходимо отключить
         # проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        path = os.path.dirname(os.path.realpath(__file__))
+        path = os.getcwd()
         filename = f'client_{name}.db3'
         self.database_engine = create_engine(
             f'sqlite:///{os.path.join(path, filename)}',

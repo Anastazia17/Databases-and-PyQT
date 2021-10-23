@@ -5,9 +5,9 @@ build_exe_options = {
     "packages": ["common", "logs", "server", "unit_tests"],
 }
 setup(
-    name="mess_server",
-    version="0.8.8",
-    description="mess_server",
+    name="mess_server_oct",
+    version="0.0.1",
+    description="mess_server_oct",
     options={
         "build_exe": build_exe_options
     },

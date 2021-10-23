@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name="mess_server_october",
+setup(name="mess_server_oct",
       version="0.0.1",
       description="mess_server_oct",
       author="Anastaziya Tsybusova",
